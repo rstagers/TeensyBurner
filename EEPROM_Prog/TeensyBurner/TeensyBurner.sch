@@ -1696,9 +1696,6 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <part name="U$1" library="Teensy_3_and_LC_Series_Boards_v1.4" deviceset="TEENSY_3.1-3.2_DIL" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF" device="-KIT-EZ-50V-20%" value="0.1uF"/>
-<part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF" device="-KIT-EZ-50V-20%" value="0.1uF"/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF" device="-KIT-EZ-50V-20%" value="0.1uF"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="POWER_JACK" device=""/>
 <part name="VCC" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -1719,11 +1716,8 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <instance part="U$1" gate="G$1" x="53.34" y="83.82" rot="R180"/>
 <instance part="P+1" gate="VCC" x="27.94" y="58.42" rot="R90"/>
 <instance part="GND1" gate="1" x="20.32" y="50.8"/>
-<instance part="C1" gate="G$1" x="205.74" y="68.58"/>
 <instance part="IC1" gate="P" x="22.86" y="149.86"/>
 <instance part="IC2" gate="P" x="43.18" y="149.86"/>
-<instance part="C2" gate="G$1" x="53.34" y="149.86"/>
-<instance part="C3" gate="G$1" x="12.7" y="149.86"/>
 <instance part="J1" gate="G$1" x="40.64" y="22.86"/>
 <instance part="VCC" gate="VCC" x="53.34" y="40.64"/>
 <instance part="GND2" gate="1" x="43.18" y="17.78"/>
@@ -1895,23 +1889,23 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="21/A7/PWM"/>
-<wire x1="76.2" y1="111.76" x2="106.68" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="111.76" x2="106.68" y2="127" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="I/O0"/>
 <wire x1="106.68" y1="127" x2="198.12" y2="127" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="127" x2="198.12" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="16/A2/T"/>
+<wire x1="76.2" y1="99.06" x2="106.68" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="99.06" x2="106.68" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="20/A6/PWM"/>
-<wire x1="76.2" y1="109.22" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="109.22" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="129.54" x2="200.66" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="129.54" x2="200.66" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="I/O1"/>
 <wire x1="200.66" y1="104.14" x2="198.12" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="17/A3/T"/>
+<wire x1="76.2" y1="101.6" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="101.6" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -1920,20 +1914,20 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="198.12" y1="101.6" x2="203.2" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="101.6" x2="203.2" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="132.08" x2="101.6" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="132.08" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="19/A5/T/SCL0"/>
-<wire x1="101.6" y1="106.68" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="18/A4/T/SDA0"/>
+<wire x1="76.2" y1="104.14" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="104.14" x2="101.6" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="18/A4/T/SDA0"/>
-<wire x1="76.2" y1="104.14" x2="99.06" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="104.14" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="134.62" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="134.62" x2="205.74" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="I/O3"/>
 <wire x1="205.74" y1="99.06" x2="198.12" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="19/A5/T/SCL0"/>
+<wire x1="76.2" y1="106.68" x2="99.06" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="106.68" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -1942,20 +1936,20 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="198.12" y1="96.52" x2="208.28" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="96.52" x2="208.28" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="137.16" x2="96.52" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="137.16" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="17/A3/T"/>
-<wire x1="96.52" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="20/A6/PWM"/>
+<wire x1="76.2" y1="109.22" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="109.22" x2="96.52" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="16/A2/T"/>
-<wire x1="76.2" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="99.06" x2="93.98" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="139.7" x2="210.82" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="139.7" x2="210.82" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="I/O5"/>
 <wire x1="210.82" y1="93.98" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="21/A7/PWM"/>
+<wire x1="76.2" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="111.76" x2="93.98" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -1964,20 +1958,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="198.12" y1="91.44" x2="213.36" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="91.44" x2="213.36" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="142.24" x2="91.44" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="142.24" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="15/A1/T"/>
-<wire x1="91.44" y1="96.52" x2="76.2" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="14/A1"/>
-<wire x1="76.2" y1="93.98" x2="88.9" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="93.98" x2="88.9" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="144.78" x2="215.9" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="144.78" x2="215.9" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="I/O7"/>
-<wire x1="215.9" y1="88.9" x2="198.12" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="22/A8/T/PWM"/>
+<wire x1="76.2" y1="114.3" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="114.3" x2="91.44" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1993,7 +1976,6 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="GND"/>
-<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="66.04" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
 <label x="203.2" y="66.04" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -2016,18 +1998,6 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="22.86" x2="53.34" y2="20.32" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="147.32" x2="53.34" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="P" pin="GND"/>
-<wire x1="53.34" y1="139.7" x2="43.18" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="147.32" x2="12.7" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="P" pin="GND"/>
-<wire x1="12.7" y1="139.7" x2="22.86" y2="139.7" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -2044,11 +2014,7 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="VCC"/>
-<wire x1="198.12" y1="76.2" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="76.2" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
-<junction x="205.74" y="76.2"/>
-<wire x1="205.74" y1="76.2" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="76.2" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
 <label x="210.82" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -2058,18 +2024,6 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="53.34" y1="30.48" x2="53.34" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <junction x="53.34" y="30.48"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="P" pin="VCC"/>
-<wire x1="22.86" y1="160.02" x2="12.7" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="160.02" x2="12.7" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="P" pin="VCC"/>
-<wire x1="43.18" y1="160.02" x2="53.34" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="160.02" x2="53.34" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -2103,6 +2057,17 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="165.1" y1="40.64" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="!WE"/>
 <wire x1="165.1" y1="66.04" x2="170.18" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="23/A9/T/PWM"/>
+<wire x1="76.2" y1="116.84" x2="88.9" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="144.78" x2="215.9" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="144.78" x2="215.9" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="I/O7"/>
+<wire x1="215.9" y1="88.9" x2="198.12" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="116.84" x2="88.9" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

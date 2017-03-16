@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : C:/Users/Randy/Documents/eagle/EEPROM_Programmer/TeensyBurner/TeensyBurner.brd
 
-Start at      : 23:28:56 (27-Feb-17)
-End at        : 23:29:07 (27-Feb-17)
-Elapsed time  : 00:00:10
+Start at      : 18:16:25 (04-Mar-17)
+End at        : 18:16:28 (04-Mar-17)
+Elapsed time  : 00:00:00
 
-Signals       :    32   RoutingGrid: 9 mil  Layers: 2
-Connections   :    51   predefined:  50 ( 17 Vias )
+Signals       :    33   RoutingGrid: 9 mil  Layers: 1
+Connections   :    44   predefined:  44 ( 6 Vias )
 
-Router memory :   951968
+Router memory :   355992
 
-Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8 Optimize9Optimize10Optimize11Optimize12
 
-Time per pass     :  00:00:10  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
-Number of Ripups  :         0         0         0         0         0         0
-max. Level        :         0         0         0         0         0         0
-max. Total        :         0         0         0         0         0         0
+Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
+Number of Ripups  :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+max. Level        :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+max. Total        :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 
-Routed            :         1         1         1         1         1         1
-Vias              :         0         0         0         0         0         0
-Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+Vias              :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished
